@@ -1,0 +1,295 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #000000;
+  color: white;
+  transition: 0.5s;
+}
+.body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #f2f9fe;
+  color: black;
+}
+.logo {
+  width: 110%;
+  margin-left: 17%;
+  color: #111729;
+}
+h1 {
+  transition: 0.5s;
+  width: 110%;
+  margin-left: 17%;
+  color: #f2f9fe;
+}
+.ocultar {
+  display: none;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.etiquetas {
+  width: 27%;
+  margin-left: -15%;
+  display: flex;
+  justify-content: space-between;
+}
+.categorias {
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  margin-top: 8%;
+  height: 25%;
+  color: #909193;
+}
+.categorias:hover {
+  transition: 0.3s;
+  font-size: 18px;
+}
+.categorias-1 {
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  margin-top: 8%;
+  height: 25%;
+  color: #111729;
+}
+.categorias-1:hover {
+  font-size: 18px;
+}
+.category-1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  margin-top: 8%;
+  height: 25%;
+  color: #f2f9fe;
+}
+.tema-1 {
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 20px;
+  height: 25px;
+  background-color: #111729;
+  margin-top: 20px;
+}
+.temas-1 {
+  transition: 0.5s;
+  padding: 3px;
+  border-radius: 20px;
+  height: 25px;
+  background-color: #f2f9fe;
+  margin-top: 20px;
+}
+.sol {
+  transition: 0.5s;
+  background-color: #f2f9fe;
+  border-radius: 20px;
+}
+
+.luna-clara {
+  border-radius: 20px;
+  transition: 0.5s;
+  background-color: #111729;
+}
+.cambio-2 {
+  border-radius: 20px;
+  transition: 0.5s;
+  background-color: #111729;
+}
+.luna-oscura {
+  display: none;
+}
+.main {
+  margin-left: 3%;
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.text-1 {
+  margin-top: 0px;
+  font-size: 80px;
+}
+.text-2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  color: #909193;
+}
+.button {
+  cursor: pointer;
+  font-size: 15px;
+  border: none;
+  color: white;
+  background-color: #2a4dd0;
+  border-radius: 10px;
+  padding: 14px;
+}
+.button:hover {
+  background-color: #3259e4;
+}
+.link {
+  color: #2a4dd0;
+  margin-left: 10%;
+  font-size: 18px;
+}
+.link:hover {
+  color: #3259e4;
+}
+.text-3 {
+  margin-top: 5%;
+  color: #909193;
+  display: flex;
+  gap: 3%;
+}
+
+.img {
+  margin-left: 20%;
+  max-width: 67%;
+}
+
+/*------------ Vista Movil -----------------*/
+
+@media (300px <= width <= 1024px) {
+  .logo {
+    margin-left: 0px;
+    position: relative;
+    margin-top: 3%;
+  }
+  h1 {
+    margin-top: 3%;
+    margin-left: 0px;
+    position: relative;
+  }
+
+  .ocultar {
+    display: block;
+    position: absolute;
+    left: 85%;
+  }
+  .burguer {
+    transition: 0.5s;
+    display: block;
+  }
+  .burguerOcultar {
+    transition: 0.5s;
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  .cruz {
+    transition: 0.5s;
+    display: none;
+  }
+  .cruzOcultar {
+    transition: 0.5s;
+    display: block;
+    position: absolute;
+    z-index: 1;
+  }
+  .etiquetas {
+    transition: 0.5s;
+    display: none;
+  }
+  .etiquetasOcultar {
+    top: 0%;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+    height: 105%;
+    left: 50%;
+    width: 50%;
+    position: absolute;
+    background-color: white;
+    transition: 0.5s;
+  }
+  .categorias {
+    position: relative;
+    top: 18%;
+    margin: 30%;
+    height: 0%;
+    display: block;
+    padding: 0px;
+    font-size: 26px;
+    border: none;
+    background-color: transparent;
+    color: #909193;
+  }
+  .categorias:hover {
+    transition: 0.3s;
+    font-size: 28px;
+  }
+  .categorias-1 {
+    top: 17%;
+    position: absolute;
+    left: 27%;
+    height: 0%;
+    transition: 0.5s;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 26px;
+    border: none;
+    background-color: transparent;
+    color: #111729;
+    padding: 0px;
+  }
+  .categorias-1:hover {
+    font-size: 28px;
+  }
+  .category-1 {
+    top: 17%;
+    height: 0%;
+    left: 27%;
+    padding: 0px;
+    display: block;
+    position: absolute;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 26px;
+    border: none;
+    background-color: transparent;
+    color: #131313;
+  }
+
+  .tema-1 {
+    display: none;
+    transition: 0.5s;
+  }
+  .temaOcultar {
+    display: block;
+    top: 55%;
+    left: 70%;
+    position: absolute;
+    border-radius: 20px;
+    background-color: #111729;
+    transition: 0.5s;
+  }
+  .temas-1 {
+    top: 55%;
+    left: 70%;
+    position: absolute;
+    transition: 0.5s;
+    border-radius: 20px;
+    background-color: #f2f9fe;
+  }
+  .sol {
+    transition: 0.5s;
+    background-color: #f2f9fe;
+    border-radius: 20px;
+  }
+
+  .luna-clara {
+    border-radius: 20px;
+    transition: 0.5s;
+    background-color: #111729;
+  }
+  .cambio-2 {
+    border-radius: 20px;
+    transition: 0.5s;
+    background-color: #111729;
+  }
+  .luna-oscura {
+    display: none;
+  }
+}
