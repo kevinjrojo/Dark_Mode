@@ -292,4 +292,9 @@ h1 {
   .luna-oscura {
     display: none;
   }
+  .title {
+  }
+  .text-1 {
+    font-size: 55px;
+  }
 }
